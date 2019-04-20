@@ -1,14 +1,13 @@
 import React from 'react';
-import Txt, {InfoTxt, WarningTxt} from './index.js';
+import Txt, { InfoTxt, WarningTxt } from './index.js';
 
 export default stories => stories
-    .add('txt-s',() => <Txt size="s">テキスト表示</Txt>)
-    .add('txt-m',() => <Txt size="m">テキスト表示</Txt>)
-    .add('txt-l',() => <Txt size="l">テキスト表示</Txt>)
-    .add('infotxt-s',() => <InfoTxt size="s">テキスト表示</InfoTxt>)
-    .add('infotxt-m',() => <InfoTxt size="m">テキスト表示</InfoTxt>)
-    .add('infotxt-l',() => <InfoTxt size="l">テキスト表示</InfoTxt>)
-    .add('warntxt-s',() => <WarningTxt bize="s">テキスト表示</WarningTxt>)
-    .add('warntxt-m',() => <WarningTxt bize="m">テキスト表示</WarningTxt>)
-    .add('warntxt-l',() => <WarningTxt bize="l">テキスト表示</WarningTxt>);
-    
+  .add('テキスト - S', () => <Txt size="s">テキストを表示</Txt>)
+  .add('テキスト - M', () => <Txt>テキストを表示</Txt>)
+  .add('テキスト - L', () => <Txt size="l">テキストを表示</Txt>)
+  .add('情報テキスト - S', () => <InfoTxt size="s">情報テキストを表示</InfoTxt>)
+  .add('情報テキスト - M', () => <InfoTxt>情報テキストを表示</InfoTxt>)
+  .add('情報テキスト - L', () => <InfoTxt size="l">情報テキストを表示</InfoTxt>)
+  .add('警告テキスト - S', () => <WarningTxt size="s">警告テキストを表示</WarningTxt>)
+  .add('警告テキスト - M', () => <WarningTxt>警告テキストを表示</WarningTxt>)
+  .add('警告テキスト - L', () => <WarningTxt size="l">警告テキストを表示</WarningTxt>);
